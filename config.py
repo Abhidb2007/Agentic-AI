@@ -3,7 +3,7 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     APP_NAME: str = "Deep Research Agent"
-    OPENAI_API_KEY: str
+    OPENAI_API_KEY: str = "demo-key"
     OPENAI_MODEL: str = "gpt-4-turbo-preview"
     DATABASE_URL: str = "postgresql+asyncpg://user:password@localhost/deep_agent_db"
     LOG_LEVEL: str = "INFO"
